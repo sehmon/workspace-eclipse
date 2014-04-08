@@ -1,22 +1,23 @@
 package com.sehmon.milestracker;
 
-import java.util.Calendar;
 import java.util.Date;
 import java.util.UUID;
 
-public abstract class Mile {
+public class Mile {
     
     private UUID mId;
-    private int mLength;
+    private double mLength;
+    //Length is in seconds
     private String mType;
+    private double mTime;
     private Date mDate;
+    private String mDescription;
     
     public Mile() {
         
-        mId = UUID.randomUUID();
         mLength = 0;
         mType = "Default";
-        mDate = Calendar.getInstance().getTime();
+        mDate = new Date();
     }
     
     public UUID getId() {
@@ -27,10 +28,10 @@ public abstract class Mile {
         mId = id;
     }
 
-    public int getLength() {
+    public double getLength() {
         return mLength;
     }
-    public void setLength(int length) {
+    public void setLength(double length) {
         mLength = length;
     }
     public String getType() {
@@ -39,12 +40,28 @@ public abstract class Mile {
     public void setType(String type) {
         mType = type;
     }
-    public Date getDate() {
+    public String getDescription() {
+		return mDescription;
+	}
+
+	public void setDescription(String mDescription) {
+		this.mDescription = mDescription;
+	}
+
+	public Date getDate() {
         return mDate;
     }
     public void setDate(Date date) {
         mDate = date;
     }
+
+	public double getTime() {
+		return mTime;
+	}
+
+	public void setTime(double mTime) {
+		this.mTime = mTime;
+	}
     
     
 }

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/homeViewGroup" >
+    
+    <TextView
+        android:id="@+id/mile_needed_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/miles_needed"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:paddingTop="20dp" />
+    <TextView 
+        android:id="@+id/mile_needed_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp" />
+    
+    
+    <TextView
+        android:id="@+id/mile_ran_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/miles_ran"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:paddingTop="4dp" />
+    <TextView 
+        android:id="@+id/mile_ran_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp" />
+    
+    
+    <TextView
+        android:id="@+id/mile_to_go_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/miles_to_go"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:paddingTop="4dp" />
+    <TextView 
+        android:id="@+id/mile_to_go_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp" />
+    
+    
+
+</LinearLayout>

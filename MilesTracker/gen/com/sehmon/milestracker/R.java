@@ -21,24 +21,86 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int ic_action_accept=0x7f020000;
+        public static final int ic_action_cancel=0x7f020001;
+        public static final int ic_action_new=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f080001;
-        public static final int new_mile_title_text_view=0x7f080000;
+        public static final int action_addMile=0x7f080024;
+        public static final int action_cancelMile=0x7f080023;
+        public static final int action_new_mile=0x7f080022;
+        public static final int action_settings=0x7f080021;
+        public static final int dateButton=0x7f080012;
+        public static final int descriptionEditText=0x7f080016;
+        public static final int descriptionTextView=0x7f080015;
+        public static final int dialog_date_datePicker=0x7f08001f;
+        public static final int dialog_date_timePicker=0x7f080020;
+        public static final int homeFragmentContainer=0x7f080000;
+        public static final int homeRadio=0x7f08000d;
+        public static final int homeViewGroup=0x7f080003;
+        public static final int lengthEditText=0x7f080014;
+        public static final int lengthTextView=0x7f080013;
+        public static final int listFragmentContainer=0x7f080001;
+        public static final int mile_needed_home=0x7f080004;
+        public static final int mile_needed_number=0x7f080005;
+        public static final int mile_ran_home=0x7f080006;
+        public static final int mile_ran_number=0x7f080007;
+        public static final int mile_to_go_home=0x7f080008;
+        public static final int mile_to_go_number=0x7f080009;
+        public static final int newMileDateTextView=0x7f080011;
+        public static final int newMileFragmentContainer=0x7f080002;
+        public static final int newMileSportTextView=0x7f080018;
+        public static final int newMileTimeTextView=0x7f08000f;
+        public static final int newMileTypeTextView=0x7f08000a;
+        public static final int schoolRadio=0x7f08000c;
+        public static final int spinner1=0x7f080019;
+        public static final int sportRadio=0x7f08000e;
+        public static final int sportTableRow=0x7f080017;
+        public static final int textView1=0x7f08001a;
+        public static final int textView2=0x7f08001d;
+        public static final int textView3=0x7f08001e;
+        public static final int textView4=0x7f08001c;
+        public static final int textView5=0x7f08001b;
+        public static final int timeButton=0x7f080010;
+        public static final int typeRadioGroup=0x7f08000b;
     }
     public static final class layout {
-        public static final int activity_miles_main=0x7f030000;
-        public static final int fragment_new_mile=0x7f030001;
+        public static final int activity_fragment=0x7f030000;
+        public static final int activity_mile_list=0x7f030001;
+        public static final int activity_miles_main=0x7f030002;
+        public static final int activity_new_mile=0x7f030003;
+        public static final int fragment_mile_home=0x7f030004;
+        public static final int fragment_new_mile=0x7f030005;
+        public static final int fragment_new_mile_sport=0x7f030006;
+        public static final int layout_test=0x7f030007;
+        public static final int mile_list_item=0x7f030008;
+        public static final int new_mile_dialog_date=0x7f030009;
+        public static final int new_mile_dialog_time=0x7f03000a;
     }
     public static final class menu {
         public static final int miles_main=0x7f070000;
+        public static final int new_mile=0x7f070001;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
+        public static final int add=0x7f050010;
+        public static final int add_new_mile=0x7f05000e;
         public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
-        public static final int new_mile=0x7f050003;
+        public static final int cancel=0x7f050011;
+        public static final int date_dialog=0x7f05000f;
+        public static final int miles_needed=0x7f050003;
+        public static final int miles_ran=0x7f050004;
+        public static final int miles_to_go=0x7f050005;
+        public static final int new_home_mile=0x7f050008;
+        public static final int new_mile=0x7f050002;
+        public static final int new_mile_date=0x7f05000b;
+        public static final int new_mile_description=0x7f05000d;
+        public static final int new_mile_length=0x7f05000c;
+        public static final int new_mile_time=0x7f05000a;
+        public static final int new_mile_type=0x7f050006;
+        public static final int new_school_mile=0x7f050007;
+        public static final int new_sport_mile=0x7f050009;
     }
     public static final class style {
         /** 

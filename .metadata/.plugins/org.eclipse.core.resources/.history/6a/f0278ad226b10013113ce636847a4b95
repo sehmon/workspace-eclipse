@@ -1,0 +1,51 @@
+package com.sehmon.milestracker;
+
+import java.util.Date;
+import java.util.UUID;
+
+public class Mile {
+    
+    private UUID mId;
+    private double mLength;
+    private String mType;
+    private Date mDate;
+    private String mDescription;
+    
+    public Mile() {
+        
+        mId = UUID.randomUUID();
+        mLength = 0;
+        mType = "Default";
+        mDate = new Date();
+    }
+    
+    public UUID getId() {
+        return mId;
+    }
+
+    public void setId(UUID id) {
+        mId = id;
+    }
+
+    public double getLength() {
+        return mLength;
+    }
+    public void setLength(double length) {
+        mLength = length;
+    }
+    public String getType() {
+        return mType;
+    }
+    public void setType(String type) {
+        mType = type;
+    }
+    public Date getDate() {
+        return mDate;
+    }
+    public void setDate(Date date) {
+        mDate = date;
+    }
+    
+    
+}
+

@@ -1,0 +1,76 @@
+package com.sehmon.milestracker;
+
+import java.util.Calendar;
+
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioGroup;
+
+public class MileNewFragment extends Fragment {
+	
+	public static final String DIALOG_DATE = "date";
+
+	
+	RadioGroup typeRadioGroup;
+	Button timeButton;
+	Button dateButton;
+	
+	EditText descriptionEditText;
+	Button addMileButton;
+	
+	@Override
+	public void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		getActivity().setTitle("Add New Mile");
+		
+	}
+	
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup parent,
+            Bundle savedInstanceState){
+        View v = inflater.inflate(R.layout.fragment_new_mile, parent, false);
+
+        
+        typeRadioGroup = (RadioGroup)v.findViewById(R.id.typeRadioGroup);
+        
+        dateButton = (Button)v.findViewById(R.id.dateButton);
+        dateButton.setText(Calendar.getInstance().getTime().toString());
+        dateButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// Update the calendar listener to work with the date button
+				FragmentManager fm = getFragmentManager();
+				
+				DatePickerFragment dialog = DatePickerFragment
+						.newInstance(Calendar.getInstance().getTime());
+				dialog.show(fm, DIALOG_DATE);
+				
+			}
+		});
+        
+        timeButton = (Button)v.findViewById(R.id.timeButton);
+        timeButton.setText(Calendar.getInstance().getTime().toString());
+        timeButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// Update the calendar listener to work with the date button
+				FragmentManager fm = getFragmentManager();
+				
+				DatePickerFragment dialog = DatePickerFragment
+						.newInstance(Calendar.getInstance().getTime());
+				dialog.show(fm, DIALOG_DATE);
+				
+			}
+		});
+        
+        return v;
+	}
+}

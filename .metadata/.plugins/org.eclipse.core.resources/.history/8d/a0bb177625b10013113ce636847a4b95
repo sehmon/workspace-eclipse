@@ -1,0 +1,59 @@
+package com.sehmon.milestracker;
+
+import java.util.ArrayList;
+
+import android.app.Fragment;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+
+
+public class MileHomeFragment extends Fragment {
+	
+	private double mTotalNeeded = 100;
+	private double mTotalRan;
+	private double mTotalToGo;
+	
+	private ArrayList<Mile> mMiles;
+	
+	TextView mMilesNeededTextView;
+	TextView mMilesRanTextView;
+	TextView mMilesToGoTextView;
+	
+	
+	
+	@Override
+	public void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		getActivity().setTitle(R.string.app_name);
+		
+		mMiles = MileLab.get(getActivity()).getMiles();
+		
+		
+	}
+	
+	@Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup parent,
+            Bundle savedInstanceState) {
+		
+		View v = inflater.inflate(R.layout.fragment_mile_home, parent, false);
+		
+		mMilesNeededTextView = (TextView)v.findViewById(R.id.mile_needed_number);
+		mMilesNeededTextView.setText(String.valueOf(this.mTotalNeeded));
+		
+		mTotalRan = MileLab.get(getActivity()).getTotalMileCount();
+		mMilesRanTextView = (TextView)v.findViewById(R.id.mile_ran_number);
+		mMilesRanTextView.setText(String.valueOf(String.valueOf(mTotalRan)));
+		
+		mTotalToGo = mTotalNeeded-mTotalRan;
+		mMilesToGoTextView = (TextView)v.findViewById(R.id.mile_to_go_number);
+		mMilesToGoTextView.setText(String.valueOf(mTotalToGo));
+		
+		return v;
+		
+		
+	}
+}

@@ -1,0 +1,22 @@
+package com.sehmon.amihome;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+public class AmIHome extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_am_ihome);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.am_ihome, menu);
+		return true;
+	}
+
+}
