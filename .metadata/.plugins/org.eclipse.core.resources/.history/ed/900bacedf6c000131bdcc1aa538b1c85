@@ -1,0 +1,53 @@
+package com.sehmon.simpleweather;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+public class Weather {
+	private String mLocation;
+	private String mTime;
+	private String mWeather;
+	private int mTemperature;
+	private int mHumidity;
+	private String mIcon_Url;
+	
+	
+	public String getmLocation() {
+		return mLocation;
+	}
+	public String getmTime() {
+		return mTime;
+	}
+	public String getmWeather() {
+		return mWeather;
+	}
+	public int getmTemperature() {
+		return mTemperature;
+	}
+	public int getmHumidity() {
+		return mHumidity;
+	}
+	public String getmIcon_Url() {
+		return mIcon_Url;
+	}
+	
+	public static Weather fromJson(JSONObject jsonObject){
+		Weather w = new Weather();
+		try {
+			w.mLocation = jsonObject.getJSONObject("display_location").getString("full");
+			
+			
+			
+			
+			
+			
+			
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	
+
+}

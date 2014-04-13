@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 packages to &apos;FoodScanner/src&apos;&#x0A;- Original project: &apos;android-requests&apos;&#x0A;- Destination element: &apos;FoodScanner/src&apos;&#x0A;- Original elements:&#x0A;     android-requests/src/com.sayar.requests.async&#x0A;     android-requests/src/com.sayar.requests.parsers&#x0A;     android-requests/src/com.sayar.requests.auth&#x0A;     android-requests/src/com.sayar.requests.impl&#x0A;     android-requests/src/com.sayar.requests" description="Copy packages" destination="=FoodScanner/src" element1="/src&lt;com.sayar.requests.async" element2="/src&lt;com.sayar.requests.parsers" element3="/src&lt;com.sayar.requests.auth" element4="/src&lt;com.sayar.requests.impl" element5="/src&lt;com.sayar.requests" flags="589830" fragments="5" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1397343869602" version="1.0"/>
+</session>

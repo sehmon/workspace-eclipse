@@ -1,0 +1,24 @@
+package com.sehmon.whatamieating;
+
+public class Nutrient {	
+	
+private String name;
+private double value;
+
+public Nutrient(String mName, double mValue){
+
+}
+public void setName(String name) {
+	this.name = name;
+}
+public void setValue(double value) {
+	this.value = value;
+}
+public String getName() {
+	return name;
+}
+public double getValue() {
+	return value;
+}
+
+}

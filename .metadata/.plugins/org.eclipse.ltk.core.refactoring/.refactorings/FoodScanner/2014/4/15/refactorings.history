@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 5 elements from project &apos;FoodScanner&apos;&#x0A;- Original project: &apos;FoodScanner&apos;&#x0A;- Original elements:&#x0A;     FoodScanner/src/com.sayar.requests&#x0A;     FoodScanner/src/com.sayar.requests.async&#x0A;     FoodScanner/src/com.sayar.requests.auth&#x0A;     FoodScanner/src/com.sayar.requests.impl&#x0A;     FoodScanner/src/com.sayar.requests.parsers" description="Delete elements" element1="/src&lt;com.sayar.requests.parsers" element2="/src&lt;com.sayar.requests.impl" element3="/src&lt;com.sayar.requests.auth" element4="/src&lt;com.sayar.requests.async" element5="/src&lt;com.sayar.requests" element6="/src&lt;com.sayar" elements="6" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1397344291909" subPackages="false" version="1.0"/>
+</session>

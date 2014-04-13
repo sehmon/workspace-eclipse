@@ -1,0 +1,74 @@
+package com.sehmon.whatamieating;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.app.Activity;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
+
+public class ScanActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_scan);
+
+		AsyncTask<String, String, String> async = new AsyncTask<String, String, String>() {
+
+			@Override
+			protected String doInBackground(String... arg0) {
+				HttpClient client = new DefaultHttpClient();
+				String path = arg0[0];
+				Log.e("MALTZ", "path is " + path);
+				HttpGet getReq = new HttpGet("http://api.foodessentials.com/productscore?u=028400071932&sid=d67a2602-46a2-489a-9483-c7a43a924f4b&f=json&api_key=m5pkqfejmtvxsw3en5rnjagu");
+				String responseString = "";
+				try {
+					HttpResponse resp = client.execute(getReq);
+					BufferedReader reader = new BufferedReader(new InputStreamReader(resp.getEntity().getContent()));
+					// read the response
+					String temp = "";
+					while ((temp = reader.readLine()) != null) {
+						responseString += temp;
+					}
+					Log.e("MALTZ", "response is " + responseString);
+					return responseString;
+				} catch (ClientProtocolException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				return responseString;
+			}
+			
+			@Override
+			protected void onPostExecute(String res) {
+				try {
+					JSONObject jsonObj = new JSONObject(res);
+					Food f = Food.fromJson(jsonObj);
+					
+					String s = f.getBrand();
+					Log.e("SEHMON", "lll");
+				} catch (JSONException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		};
+		async.execute("blah");
+	}
+
+}

@@ -1,0 +1,55 @@
+package com.sehmon.whatamieating;
+
+import java.util.ArrayList;
+
+import org.json.JSONObject;
+
+
+public class Food {
+
+	private String upc;
+	private String brand;
+	private ArrayList<String> nutrients;
+	private ArrayList<String> additives;
+
+	private int score;
+	
+	public ArrayList<String> getNutrients() {
+		return nutrients;
+	}
+
+	public ArrayList<String> getAdditives() {
+		return additives;
+	}
+
+	public int getScore() {
+		return score;
+	}
+
+
+	public String getUpc() {
+		return upc;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+	
+	public static Food fromJson(JSONObject jsonObject){
+		
+		Food f = new Food();
+		try{
+			
+			f.brand = jsonObject.getString("brand");
+			f.upc = jsonObject.getString("upc");
+			
+			
+						
+		} catch(Exception e){
+			e.printStackTrace();
+			return null;
+		}
+		
+		return f;
+	}
+}

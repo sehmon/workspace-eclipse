@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;FoodEssentialsClient.java&apos; to &apos;FoodScanner/src/com.sehmon.foodscanner&apos;&#x0A;- Original project: &apos;FoodScanner&apos;&#x0A;- Destination element: &apos;FoodScanner/src/com.sehmon.foodscanner&apos;&#x0A;- Original element: &apos;com.sehmon.foodscanner.FoodEssentialsClient.java&apos;" description="Copy compilation unit" destination="/src&lt;com.sehmon.foodscanner" element1="/src&lt;com.sehmon.foodscanner{FoodEssentialsClient.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1397347951032" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,7 @@
+package com.sehmon.whatamieating;
+
+import android.support.v4.app.Fragment;
+
+public class ScoreFragment extends Fragment {
+
+}

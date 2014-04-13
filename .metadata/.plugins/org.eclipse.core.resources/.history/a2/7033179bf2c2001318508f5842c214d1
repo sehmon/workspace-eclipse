@@ -1,0 +1,38 @@
+package com.sehmon.whatamieating;
+
+
+import java.util.ArrayList;
+
+import android.app.Fragment;
+import android.app.ListFragment;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ListView;
+
+public class NutrientFragment extends ListFragment {
+	ListView lv1;
+
+	public static Fragment newInstance() {
+		return new NutrientFragment();
+	}
+	
+	
+	@Override
+	public View onCreate(Bundle savedInstanceState) {
+		View rootView = inflater.inflate(R.layout.fragment_nutrient_list,
+				container, false);
+		lv1 = (ListView)rootView.findViewById(R.id.nutrientListView);
+		ArrayList<Nutrient> aNutrients = (ArrayList<Nutrient>) getArguments().get("nutrients");
+		NutrientListAdapter adapter = new NutrientListAdapter(getActivity(), aNutrients);
+		
+		
+		
+		
+		return rootView;
+		
+	}
+	
+	public NutrientFragment(){
+		
+	}
+}

@@ -1,0 +1,31 @@
+package com.sehmon.whatamieating;
+
+
+import java.util.ArrayList;
+
+import android.app.Fragment;
+import android.app.ListFragment;
+import android.os.Bundle;
+
+public class NutrientFragment extends ListFragment {
+
+	public static Fragment newInstance() {
+		return new NutrientFragment();
+	}
+	
+	
+	@Override
+	public void onActivityCreated(Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+		
+		ArrayList<Nutrient> aNutrients = (ArrayList<Nutrient>) getArguments().get("nutrients");
+		
+		NutrientListAdapter adapter = new NutrientListAdapter(getActivity(), aNutrients);
+		setListAdapter(adapter);
+		
+	}
+	
+	public NutrientFragment(){
+		
+	}
+}

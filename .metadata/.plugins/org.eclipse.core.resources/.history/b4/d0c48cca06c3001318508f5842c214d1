@@ -1,0 +1,7 @@
+package com.sehmon.whatamieating;
+
+public interface NutrientProvider {
+
+	public List<Nutrients> getNutrients(){
+	}
+}

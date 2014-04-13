@@ -1,0 +1,7 @@
+package com.sehmon.rottentomatoesdemo;
+
+import android.widget.AdapterView;
+
+public class NutrientListAdapter extends AdapterView<T> {
+
+}

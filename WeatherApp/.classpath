@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="/home/sehmon/downloads/android-rest-client-template/libs/ActiveAndroid-3.1-adcddac4c58.jar"/>
+	<classpathentry kind="lib" path="/home/sehmon/downloads/android-rest-client-template/libs/android-async-http-1.4.3.jar"/>
+	<classpathentry kind="lib" path="/home/sehmon/downloads/android-rest-client-template/libs/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="/home/sehmon/downloads/android-rest-client-template/libs/codepath-oauth-0.3.0.jar"/>
+	<classpathentry kind="lib" path="/home/sehmon/downloads/android-rest-client-template/libs/codepath-utils.jar"/>
+	<classpathentry kind="lib" path="/home/sehmon/downloads/android-rest-client-template/libs/scribe-codepath.jar"/>
+	<classpathentry kind="lib" path="/home/sehmon/downloads/android-rest-client-template/libs/universal-image-loader-1.8.4.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

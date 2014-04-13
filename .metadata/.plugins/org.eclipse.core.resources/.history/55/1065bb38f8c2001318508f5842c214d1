@@ -1,0 +1,47 @@
+package com.sehmon.whatamieating;
+
+
+import java.util.ArrayList;
+
+import android.app.Fragment;
+import android.app.ListFragment;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ListView;
+
+public class NutrientFragment extends ListFragment {
+
+	private ArrayList<Nutrient> nutrients;
+	private NutrientListAdapter mAdapter;
+	private ListView listView;
+	
+	public static Fragment newInstance() {
+		return new NutrientFragment();
+	}
+	
+	
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState){
+		View rootView = inflater.inflate(R.layout.fragment_nutrient_list, container);
+		listView = (ListView)rootView.findViewById(R.id.list_item);
+		return rootView;
+	}
+	
+	@Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        int num = getArguments().g;
+        // GlobalList is a class that holds global variables, arrays etc
+        // getMenuCategories returns global arraylist which is initialized in GlobalList class
+        menuItems = GlobalList.getMenuCategories().get(num).getMenu();
+        mAdapter = new NutrientListAdapter(getActivity(), R.id.list_item, nutrients);
+        listView.setAdapter(mAdapter);
+    }
+
+	public NutrientFragment(){
+		
+	}
+}
