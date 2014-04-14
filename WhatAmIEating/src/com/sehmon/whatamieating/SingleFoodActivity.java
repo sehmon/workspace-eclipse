@@ -26,29 +26,22 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 public class SingleFoodActivity extends Activity implements
 		ActionBar.TabListener, NutrientProvider {
 	
+	//These three are used for the provider
 	Food f;
 	ArrayList<Nutrient> nutrients;
 	ArrayList<Additive> additives;
 	
-	/**
-	 * The {@link android.support.v4.view.PagerAdapter} that will provide
-	 * fragments for each of the sections. We use a {@link FragmentPagerAdapter}
-	 * derivative, which will keep every loaded fragment in memory. If this
-	 * becomes too memory intensive, it may be best to switch to a
-	 * {@link android.support.v13.app.FragmentStatePagerAdapter}.
-	 */
+	//This page adapter is what allows for multiple fragments in one activity
+	//If your project is too memory intensive, then you should use a PagerAdapter
 	SectionsPagerAdapter mSectionsPagerAdapter;
 
-	/**
-	 * The {@link ViewPager} that will host the section contents.
-	 */
+	//This pager hosts the section contents
 	ViewPager mViewPager;
 
 	@Override
@@ -90,7 +83,11 @@ public class SingleFoodActivity extends Activity implements
 					.setText(mSectionsPagerAdapter.getPageTitle(i))
 					.setTabListener(this));
 		}
+		
+		//When the pager opens, it starts in the middle
 		mViewPager.setCurrentItem(1);
+		
+		//TODO Change this to the actual food title
 		actionBar.setTitle("Frito-Lays Doritos");
 		
 	}
@@ -142,14 +139,14 @@ public class SingleFoodActivity extends Activity implements
 		public SectionsPagerAdapter(FragmentManager fm) {
 			super(fm);
 		}
-
+		
+		
+		//This is where the fragments are returned on page swipe
 		@Override
 		public Fragment getItem(int position) {
 			// getItem is called to instantiate the fragment for the given page.
-			// Return a PlaceholderFragment (defined as a static inner class
-			// below).
+
 			Fragment f = new Fragment();
-			f = ScoreFragment.newInstance();
 			switch(position){
 			case 0:
 				f = NutrientFragment.newInstance();
@@ -186,18 +183,31 @@ public class SingleFoodActivity extends Activity implements
 	}
 
 	
+	//This is the method that gives you the food data using Async
+	//Still don't understand it 100%
 	public void getFoodInfo(){
 		AsyncTask<String, String, String> async = new AsyncTask<String, String, String>() {
 
 			@Override
 			protected String doInBackground(String... arg0) {
+				//This grabs the Intent from the Scan and gets the upc code of the food
 				Intent i = getIntent();
 				String s = i.getStringExtra("upcCode");
 				HttpClient client = new DefaultHttpClient();
-				HttpGet getReq = new HttpGet("http://api.foodessentials.com/productscore?u=" + s + "&sid=b318d6d9-3858-432e-81bf-fe037cc313ae&f=json&api_key=m5pkqfejmtvxsw3en5rnjagu");
-			  //HttpGet getReq = new HttpGet("http://api.foodessentials.com/productscore?u=028400091510&sid=b318d6d9-3858-432e-81bf-fe037cc313ae&f=json&api_key=m5pkqfejmtvxsw3en5rnjagu");
+				
+				//This is the url that you create to make the Get Request
+				HttpGet getReq = new HttpGet("http://api.foodessentials.com/productscore?u=" 
+				+ s + "&sid=b318d6d9-3858-432e-81bf-fe037cc313ae&f=json&api_key=m5pkqfejmtvxsw3en5rnjagu");
+				
 				String responseString = "";
+				
+				//I still don't know what this does exactly:
+
 				try {
+					//Here you set the response of the client to resp
+					//Then you use a BufferedReader to parse the response
+					//After, you use the while loop to add each line of the response to a new string
+					//Finally you return the response to whatever asked for it
 					HttpResponse resp = client.execute(getReq);
 					BufferedReader reader = new BufferedReader(new InputStreamReader(resp.getEntity().getContent()));
 					// read the response
@@ -205,7 +215,7 @@ public class SingleFoodActivity extends Activity implements
 					while ((temp = reader.readLine()) != null) {
 						responseString += temp;
 					}
-					Log.e("MALTZ", "response is " + responseString);
+
 					return responseString;
 				} catch (ClientProtocolException e) {
 					// TODO Auto-generated catch block
@@ -217,9 +227,14 @@ public class SingleFoodActivity extends Activity implements
 				return responseString;
 			}
 			
+			
+			//This is a default method of the Async Class that you have to override
 			@Override
 			protected void onPostExecute(String res) {
+				
+				//Because it is Async, you have to do all your variable setting here
 				try {
+					//Use the entire response and make a JSON Object out of it
 					JSONObject jsonObject = new JSONObject(res);
 					f = Food.fromJson(jsonObject.getJSONObject("product"));	
 					JSONArray jsonAdditives = jsonObject.getJSONObject("product").getJSONArray("additives");
@@ -233,17 +248,21 @@ public class SingleFoodActivity extends Activity implements
 						additives.add(Additive.fromJson(jsonAdditives.getJSONObject(i)));
 					}
 					
-					Log.i("yawk", String.valueOf(additives.size()));
-					
 				} catch (JSONException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
 		};
+		
+		//Because all of that was an anonymous class, the method really is just this part right here
+		//I think the execute method doesn't need parameters for this one, so we just set the String to blah
+		//TODO Find a way to add parameters into the request right here, beacause then you can just call the method with the intent data (upc, food name)
 		async.execute("blah");
 	}
 
+	
+	//These are the methods you need, because SingleFoodActivity extends the Nutrient Provier Class
 	@Override
 	public List<Nutrient> getNutrients() {
 		// TODO Auto-generated method stub
@@ -267,13 +286,6 @@ public class SingleFoodActivity extends Activity implements
 		}
 		return f;
 	}
-
-	@Override
-	public String title() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
 
 
 }

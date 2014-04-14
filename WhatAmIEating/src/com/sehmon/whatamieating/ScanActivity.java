@@ -20,11 +20,12 @@ public class ScanActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_scan);
 		
+		//Arrow button to start scan
 		b1 = (ImageButton)findViewById(R.id.scanButton);
 		b1.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
-			public void onClick(View arg0) {
+			public void onClick(View view) {
 				IntentIntegrator scanIntegrator = new IntentIntegrator(ScanActivity.this);
 				scanIntegrator.initiateScan();
 				

@@ -1,9 +1,0 @@
-package com.sehmon.whatamieating;
-
-import java.util.List;
-
-public interface NutrientProvider {
-
-	public List<Nutrient> getNutrients(){
-	}
-}

@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+
 public class NutrientListAdapter extends ArrayAdapter<Nutrient> {
 	Context context;
 
@@ -20,6 +21,7 @@ public class NutrientListAdapter extends ArrayAdapter<Nutrient> {
 	public View getView(int position, View convertView, ViewGroup parent){
 		
 		Nutrient nutrient = getItem(position);
+		
 		
 		if(convertView == null){
 		LayoutInflater inflater = LayoutInflater.from(getContext());

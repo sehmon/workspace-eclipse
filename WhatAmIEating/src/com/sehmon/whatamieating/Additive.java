@@ -9,6 +9,7 @@ public class Additive {
 	private String type;
 	private String additives;
 	
+	//Creating a new food from a JSON Object
 	public static Additive fromJson(JSONObject jsonObject){
 		Additive a = new Additive();
 		try{

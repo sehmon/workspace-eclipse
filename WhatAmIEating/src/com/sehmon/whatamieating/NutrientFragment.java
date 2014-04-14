@@ -16,6 +16,9 @@ import android.widget.ListView;
 
 public class NutrientFragment extends Fragment {
 
+	//Getting the provider for the data
+	//This class is basically the same as the other fragment
+	//TODO create a parent fragment for these two, so we can just extend
 	NutrientProvider provider;
 	public ArrayList<Nutrient> nutrients;
 	NutrientListAdapter adapter;

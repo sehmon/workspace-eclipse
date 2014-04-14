@@ -1,7 +1,0 @@
-package com.sehmon.whatamieating;
-
-import android.app.Fragment;
-
-public class AdditiveFragment extends Fragment {
-
-}

@@ -25,7 +25,9 @@ public class AdditiveFragment extends Fragment {
 		return new AdditiveFragment();
 	}
 	
-	
+	//When the fragment is created you want to assign the listView variables, but not assign them yet
+	//You do this because the data is still being grabbed from the API by the time this happens
+	//TODO Create a splash screen to handle waiting for the data
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState){
@@ -34,6 +36,8 @@ public class AdditiveFragment extends Fragment {
 		lv1 = (ListView)rootView.findViewById(R.id.listView1);
 		lv1.setOnItemClickListener(new OnItemClickListener() {
 
+			//When an additive is clicked you want to start a new activity showing what the additives are
+			//This starts that activity with an intent
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
@@ -47,6 +51,8 @@ public class AdditiveFragment extends Fragment {
 		return rootView;
 	}
 	
+	//As soon as the fragment attaches you want to set the provider
+	//This method takes in an activity, so you can grab all the data you need from it
 	@Override
 	public void onAttach(Activity activity){
 		super.onAttach(activity);
@@ -55,6 +61,7 @@ public class AdditiveFragment extends Fragment {
 		
 	}
 	
+	//Whenever the app resumes, you want to try and create that list of nutrients
 	@Override
 	public void onResume(){
 		super.onResume();

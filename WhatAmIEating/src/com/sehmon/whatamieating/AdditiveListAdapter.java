@@ -9,9 +9,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+//TODO Create a parent class for this adapter because it's the same as the nutrient one
 public class AdditiveListAdapter extends ArrayAdapter<Additive> {
 	Context context;
 
+	//Typical constructor
 	public AdditiveListAdapter(Context context, int convertView, ArrayList<Additive> objects) {
 		super(context, convertView, objects);
 	}
@@ -26,6 +28,7 @@ public class AdditiveListAdapter extends ArrayAdapter<Additive> {
 		convertView = inflater.inflate(R.layout.item_list, null);
 		}
 		
+		//Sets TextView Fields to what you need them to be
 		TextView name = (TextView)convertView.findViewById(R.id.nutrientTextView);
 		TextView desc = (TextView)convertView.findViewById(R.id.amountTextView);
 		name.setText(additive.getName());

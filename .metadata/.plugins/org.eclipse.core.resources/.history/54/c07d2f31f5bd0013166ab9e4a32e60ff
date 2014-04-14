@@ -1,7 +1,0 @@
-package com.sehmon.milestracker;
-
-import android.app.Activity;
-
-public class MileListActivity extends Activity {
-
-}
