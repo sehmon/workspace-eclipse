@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="26" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
-<window height="764" maximized="true" width="685" x="684" y="0">
+<window height="764" maximized="true" width="685" x="1" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="45"/>
@@ -17,13 +17,13 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="130" y="24"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditorNoSource" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="74" y="24"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="74" y="24"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wb.core.guiEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="58" y="24"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -31,7 +31,7 @@
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="UserSeparator" itemType="typeSeparator"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="58" y="24"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="106" y="24"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="34" y="24"/>
 <coolItem id="com.genymobile.genymotion.toolbars.sampleToolbar" itemType="typeToolBarContribution" x="34" y="24"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="194" y="24"/>
@@ -41,10 +41,26 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MileNewFragment.java" partName="MileNewFragment.java" path="/home/sehmon/repos/workspace-eclipse/MilesTracker/src/com/sehmon/milestracker/MileNewFragment.java" title="MileNewFragment.java" tooltip="MilesTracker/src/com/sehmon/milestracker/MileNewFragment.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MilesTracker/src/com/sehmon/milestracker/MileNewFragment.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7840" selectionTopPixel="2979"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MileJSONSerializer.java" partName="MileJSONSerializer.java" path="/home/sehmon/repos/workspace-eclipse/MilesTracker/src/com/sehmon/milestracker/MileJSONSerializer.java" title="MileJSONSerializer.java" tooltip="MilesTracker/src/com/sehmon/milestracker/MileJSONSerializer.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MilesTracker/src/com/sehmon/milestracker/MileJSONSerializer.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="920" selectionTopPixel="143"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MileLab.java" partName="MileLab.java" path="/home/sehmon/repos/workspace-eclipse/MilesTracker/src/com/sehmon/milestracker/MileLab.java" title="MileLab.java" tooltip="MilesTracker/src/com/sehmon/milestracker/MileLab.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MilesTracker/src/com/sehmon/milestracker/MileLab.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1322" selectionTopPixel="473"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
@@ -60,7 +76,7 @@
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
-<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="300" org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.priorityField="30" org.eclipse.ui.ide.resourceField="90"/>
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="513" org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="610" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.priorityField="30" org.eclipse.ui.ide.resourceField="90"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
@@ -87,9 +103,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors (7 items)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="352" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="662"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -97,9 +110,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -130,6 +140,9 @@
 </customFilters>
 </viewState>
 </view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
 <viewState/>
 </view>
@@ -137,7 +150,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -385,6 +398,11 @@
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <fastViewBars>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@5dd9b953" orientation="256" selectedTabId="org.eclipse.ui.views.TaskList" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.TaskList" ratio="0.6902087"/>
+</fastViews>
+</fastViewBar>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@686084d8" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
 <fastViews>
 <view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
@@ -395,25 +413,25 @@
 <view id="org.eclipse.ui.views.ProblemView" ratio="0.2979066"/>
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.29855537"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.26247987"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.2520064"/>
 <view id="org.eclipse.search.ui.views.SearchView" ratio="0.29855537"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="16384" id="left" orientation="512" selectedTabId="org.eclipse.jdt.ui.PackageExplorer" style="0">
 <fastViews>
-<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.2997694"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.29823214"/>
 </fastViews>
 </fastViewBar>
-<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@2d3a6072" orientation="256" selectedTabId="com.android.ide.eclipse.ddms.views.LogCatView" style="0">
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@2d3a6072" orientation="256" selectedTabId="com.android.ide.eclipse.ddms.views.LogCatView" style="0">
 <fastViews>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.8931553"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="1.176565"/>
 </fastViews>
 </fastViewBar>
 </fastViewBars>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
@@ -451,15 +469,27 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@2d3a6072" ratio="0.57580644" ratioLeft="357" ratioRight="263" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2d3a6072" ratio="0.22580644" ratioLeft="140" ratioRight="480" relationship="4" relative="org.eclipse.ui.editorss">
 <folder appearance="2" expanded="2">
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@686084d8" ratio="0.7494235" ratioLeft="975" ratioRight="326" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@5dd9b953" ratio="0.49961567" ratioLeft="650" ratioRight="651" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@262fc725" ratio="0.49961567" ratioLeft="650" ratioRight="651" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
@@ -468,7 +498,164 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MilesTracker/src/com/sehmon/milestracker/Mile.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MilesTracker/src/com/sehmon/milestracker/MileNewFragment.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MilesTracker/src/com/sehmon/milestracker/MileJSONSerializer.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MilesTracker/src/com/sehmon/milestracker/MileLab.java"/>
+</editors>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="1428" y="0"/>
+</item>
+<item historyLabel="MileJSONSerializer.java" index="2">
+<position info="not_deleted" x="920" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="1428" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="205" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="258" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="307" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="356" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="405" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="468" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="1700" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="1723" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="1730" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="1753" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="1764" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="1814" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="1865" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="1879" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="1817" y="0"/>
+</item>
+<item historyLabel="Mile.java" index="0">
+<position info="not_deleted" x="1899" y="0"/>
+</item>
+<item historyLabel="MileJSONSerializer.java" index="2">
+<position info="not_deleted" x="920" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="189" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="243" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="1211" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="1259" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="1277" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="1301" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="1348" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="1366" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="875" y="0"/>
+</item>
+<item historyLabel="MileNewFragment.java" index="1">
+<position info="not_deleted" x="2218" y="0"/>
+</item>
+<item historyLabel="MileNewFragment.java" index="1">
+<position info="not_deleted" x="7819" y="0"/>
+</item>
+<item historyLabel="MileNewFragment.java" index="1">
+<position info="not_deleted" x="7882" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="1210" y="0"/>
+</item>
+<item historyLabel="MileJSONSerializer.java" index="2">
+<position info="not_deleted" x="920" y="0"/>
+</item>
+<item historyLabel="MileNewFragment.java" index="1">
+<position info="not_deleted" x="7882" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="1210" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="1246" y="0"/>
+</item>
+<item historyLabel="MileJSONSerializer.java" index="2">
+<position info="not_deleted" x="920" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="1259" y="0"/>
+</item>
+<item historyLabel="MileJSONSerializer.java" index="2">
+<position info="not_deleted" x="920" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="1225" y="36"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="1263" y="0"/>
+</item>
+<item historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="1224" y="0"/>
+</item>
+<item historyLabel="MileJSONSerializer.java" index="2">
+<position info="not_deleted" x="920" y="0"/>
+</item>
+<item historyLabel="MileNewFragment.java" index="1">
+<position info="not_deleted" x="7840" y="0"/>
+</item>
+<item historyLabel="MileJSONSerializer.java" index="2">
+<position info="not_deleted" x="920" y="0"/>
+</item>
+<item active="true" historyLabel="MileLab.java" index="3">
+<position info="not_deleted" x="1224" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -479,7 +666,9 @@
 </trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="bottom"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@2d3a6072"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@686084d8"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@5dd9b953"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -488,55 +677,54 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@2d3a6072"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SingleFoodActivity.java" tooltip="WhatAmIEating/src/com/sehmon/whatamieating/SingleFoodActivity.java">
-<persistable path="/WhatAmIEating/src/com/sehmon/whatamieating/SingleFoodActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MileLab.java" tooltip="MilesTracker/src/com/sehmon/milestracker/MileLab.java">
+<persistable path="/MilesTracker/src/com/sehmon/milestracker/MileLab.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ScoreFragment.java" tooltip="WhatAmIEating/src/com/sehmon/whatamieating/ScoreFragment.java">
-<persistable path="/WhatAmIEating/src/com/sehmon/whatamieating/ScoreFragment.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Mile.java" tooltip="MilesTracker/src/com/sehmon/milestracker/Mile.java">
+<persistable path="/MilesTracker/src/com/sehmon/milestracker/Mile.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MileJSONSerializer.java" tooltip="MilesTracker/src/com/sehmon/milestracker/MileJSONSerializer.java">
+<persistable path="/MilesTracker/src/com/sehmon/milestracker/MileJSONSerializer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="MilesTracker/AndroidManifest.xml">
+<persistable path="/MilesTracker/AndroidManifest.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MileNewFragment.java" tooltip="MilesTracker/src/com/sehmon/milestracker/MileNewFragment.java">
+<persistable path="/MilesTracker/src/com/sehmon/milestracker/MileNewFragment.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MileNewActivity.java" tooltip="MilesTracker/src/com/sehmon/milestracker/MileNewActivity.java">
+<persistable path="/MilesTracker/src/com/sehmon/milestracker/MileNewActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="fragment_new_mile.xml" tooltip="MilesTracker/res/layout/fragment_new_mile.xml">
+<persistable path="/MilesTracker/res/layout/fragment_new_mile.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="miles_main.xml" tooltip="MilesTracker/res/menu/miles_main.xml">
+<persistable path="/MilesTracker/res/menu/miles_main.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="MilesTracker/res/values/strings.xml">
+<persistable path="/MilesTracker/res/values/strings.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataGrabber.java" tooltip="WhatAmIEating/src/com/sehmon/whatamieating/DataGrabber.java">
+<persistable path="/WhatAmIEating/src/com/sehmon/whatamieating/DataGrabber.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MileHomeFragment.java" tooltip="MilesTracker/src/com/sehmon/milestracker/MileHomeFragment.java">
+<persistable path="/MilesTracker/src/com/sehmon/milestracker/MileHomeFragment.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MileHomeActivity.java" tooltip="MilesTracker/src/com/sehmon/milestracker/MileHomeActivity.java">
+<persistable path="/MilesTracker/src/com/sehmon/milestracker/MileHomeActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_scan.xml" tooltip="WhatAmIEating/res/layout/activity_scan.xml">
+<persistable path="/WhatAmIEating/res/layout/activity_scan.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ScanActivity.java" tooltip="WhatAmIEating/src/com/sehmon/whatamieating/ScanActivity.java">
 <persistable path="/WhatAmIEating/src/com/sehmon/whatamieating/ScanActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NutrientProvider.java" tooltip="WhatAmIEating/src/com/sehmon/whatamieating/NutrientProvider.java">
-<persistable path="/WhatAmIEating/src/com/sehmon/whatamieating/NutrientProvider.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AdditiveListAdapter.java" tooltip="WhatAmIEating/src/com/sehmon/whatamieating/AdditiveListAdapter.java">
-<persistable path="/WhatAmIEating/src/com/sehmon/whatamieating/AdditiveListAdapter.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NutrientListAdapter.java" tooltip="WhatAmIEating/src/com/sehmon/whatamieating/NutrientListAdapter.java">
-<persistable path="/WhatAmIEating/src/com/sehmon/whatamieating/NutrientListAdapter.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NutrientFragment.java" tooltip="WhatAmIEating/src/com/sehmon/whatamieating/NutrientFragment.java">
-<persistable path="/WhatAmIEating/src/com/sehmon/whatamieating/NutrientFragment.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Nutrient.java" tooltip="WhatAmIEating/src/com/sehmon/whatamieating/Nutrient.java">
-<persistable path="/WhatAmIEating/src/com/sehmon/whatamieating/Nutrient.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Food.java" tooltip="WhatAmIEating/src/com/sehmon/whatamieating/Food.java">
-<persistable path="/WhatAmIEating/src/com/sehmon/whatamieating/Food.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DetailActivity.java" tooltip="WhatAmIEating/src/com/sehmon/whatamieating/DetailActivity.java">
-<persistable path="/WhatAmIEating/src/com/sehmon/whatamieating/DetailActivity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="WhatAmIEating/AndroidManifest.xml">
-<persistable path="/WhatAmIEating/AndroidManifest.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="styles.xml" tooltip="WhatAmIEating/res/values-v14/styles.xml">
-<persistable path="/WhatAmIEating/res/values-v14/styles.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="styles.xml" tooltip="WhatAmIEating/res/values-v11/styles.xml">
-<persistable path="/WhatAmIEating/res/values-v11/styles.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="styles.xml" tooltip="WhatAmIEating/res/values/styles.xml">
-<persistable path="/WhatAmIEating/res/values/styles.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AdditiveFragment.java" tooltip="WhatAmIEating/src/com/sehmon/whatamieating/AdditiveFragment.java">
-<persistable path="/WhatAmIEating/src/com/sehmon/whatamieating/AdditiveFragment.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="WhatAmIEating/res/values/strings.xml">
+<persistable path="/WhatAmIEating/res/values/strings.xml"/>
 </file>
 </mruList>
 </workbench>

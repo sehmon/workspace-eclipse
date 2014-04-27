@@ -3,7 +3,17 @@ package com.sehmon.milestracker;
 import java.util.Date;
 import java.util.UUID;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class Mile {
+	
+	private static final String JSON_ID = "id";
+	private static final String JSON_LENGTH = "length";
+	private static final String JSON_TYPE = "type";
+	private static final String JSON_TIME = "time";
+	private static final String JSON_DATE = "date";
+	private static final String JSON_DESCRIPTION = "description";
     
     private UUID mId;
     private double mLength;
@@ -61,6 +71,19 @@ public class Mile {
 
 	public void setTime(double mTime) {
 		this.mTime = mTime;
+	}
+
+	public JSONObject toJSON() throws JSONException {
+		// TODO Auto-generated method stub
+		JSONObject json = new JSONObject();
+		json.put(JSON_ID, mId.toString());
+		json.put(JSON_TYPE, mType);
+		json.put(JSON_LENGTH, mLength);
+		json.put(JSON_TIME, mTime);
+		json.put(JSON_DATE, mDate.toString());
+		json.put(JSON_DESCRIPTION, mDescription);
+		
+		return json;
 	}
     
     

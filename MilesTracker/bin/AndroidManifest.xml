@@ -3,6 +3,9 @@
     package="com.sehmon.milestracker"
     android:versionCode="1"
     android:versionName="1.0" >
+    
+     <meta-data android:name="android.support.PARENT_ACTIVITY"
+        android:value=".MileHomeActivity"/>
 
     <uses-sdk
         android:minSdkVersion="11"

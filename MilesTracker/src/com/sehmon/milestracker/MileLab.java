@@ -3,23 +3,23 @@ package com.sehmon.milestracker;
 import java.util.ArrayList;
 
 import android.content.Context;
+import android.util.Log;
 
 public class MileLab {
+	
+	private static final String TAG = "MileLab";
+	private static final String FILENAME = "miles.json";
     
     private ArrayList<Mile> mMiles;
+    private MileJSONSerializer mSerializer;
     
     private static MileLab sMileLab;
-    
+    private Context mAppContext;
     
     
     private MileLab(Context appContext){
         mMiles = new ArrayList<Mile>();
-        
-        for(int i = 0; i < 5; i++){
-        	Mile m = new Mile();
-        	m.setLength(1);
-        	mMiles.add(m);         
-        }
+       mAppContext = appContext;
     }
     
     public static MileLab get(Context c){
@@ -54,6 +54,17 @@ public class MileLab {
     	
     	return total;
     	
+    }
+    
+    public boolean saveMiles(){
+    	try {
+    		mSerializer.saveMiles(mMiles);
+    		Log.d(TAG, "crimes saved to file");
+    		return true;
+    	} catch (Exception e){
+    		Log.e(TAG, "Error saving Crimes", e);
+    		return false;
+    	}
     }
     
     

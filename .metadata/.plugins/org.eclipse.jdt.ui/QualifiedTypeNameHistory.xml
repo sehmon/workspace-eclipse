@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.sehmon.milestracker.R.id"/>
-<fullyQualifiedTypeName name="android.text.TextUtils"/>
-<fullyQualifiedTypeName name="com.sehmon.rottentomatoesdemo.R.layout"/>
-<fullyQualifiedTypeName name="com.sehmon.rottentomatoesdemo.R.id"/>
-<fullyQualifiedTypeName name="android.widget.ImageView.ScaleType"/>
-<fullyQualifiedTypeName name="com.squareup.picasso.Picasso"/>
-<fullyQualifiedTypeName name="com.sehmon.foodscanner.R.id"/>
-<fullyQualifiedTypeName name="android.preference.PreferenceActivity.Header"/>
-<fullyQualifiedTypeName name="org.apache.http.Header"/>
-<fullyQualifiedTypeName name="org.apache.http.client.HttpClient"/>
-<fullyQualifiedTypeName name="org.apache.http.impl.client.DefaultHttpClient"/>
 <fullyQualifiedTypeName name="org.apache.http.client.methods.HttpGet"/>
 <fullyQualifiedTypeName name="org.apache.http.HttpResponse"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
@@ -34,10 +23,8 @@
 <fullyQualifiedTypeName name="android.R.integer"/>
 <fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="com.sehmon.whatamieating.Nutrient"/>
-<fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="android.os.Bundle"/>
 <fullyQualifiedTypeName name="android.app.ListFragment"/>
-<fullyQualifiedTypeName name="com.sehmon.whatamieating.SingleFoodActivity"/>
 <fullyQualifiedTypeName name="android.content.Context"/>
 <fullyQualifiedTypeName name="com.sehmon.whatamieating.NutrientFragment"/>
 <fullyQualifiedTypeName name="android.view.ViewGroup"/>
@@ -50,14 +37,27 @@
 <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
 <fullyQualifiedTypeName name="android.view.View"/>
 <fullyQualifiedTypeName name="com.sehmon.whatamieating.NutrientListAdapter"/>
-<fullyQualifiedTypeName name="org.json.JSONObject"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
-<fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.sehmon.whatamieating.Additive"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
 <fullyQualifiedTypeName name="com.sehmon.whatamieating.R.id"/>
 <fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="com.sehmon.whatamieating.DataGraber"/>
+<fullyQualifiedTypeName name="android.os.Parcelable"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="com.sehmon.whatamieating.DataGrabber"/>
+<fullyQualifiedTypeName name="com.sehmon.whatamieating.SingleFoodActivity"/>
+<fullyQualifiedTypeName name="android.support.v4.app.NavUtils"/>
+<fullyQualifiedTypeName name="com.sehmon.milestracker.MileJSONSerializer"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
+<fullyQualifiedTypeName name="java.io.Writer"/>
+<fullyQualifiedTypeName name="org.json.JSONException"/>
+<fullyQualifiedTypeName name="org.json.JSONObject"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.sehmon.milestracker.MileLab"/>
 </qualifiedTypeNameHistroy>

@@ -13,8 +13,9 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="Nutrient" key="selection"/>
+		<item value="" key="selection"/>
 		<list key="findhistory">
+			<item value="getIntent"/>
 			<item value="Nutrient"/>
 			<item value="nutrient"/>
 			<item value="container"/>
@@ -22,12 +23,15 @@
 			<item value="getFoodInfo"/>
 			<item value="fragmentstate"/>
 			<item value="fragment_single"/>
-			<item value="sectionspager"/>
 		</list>
 		<list key="replacehistory">
 			<item value="Additive"/>
 			<item value="additive"/>
 			<item value="TableRow"/>
 		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="263" key="DIALOG_Y_ORIGIN"/>
+		<item value="446" key="DIALOG_X_ORIGIN"/>
 	</section>
 </section>

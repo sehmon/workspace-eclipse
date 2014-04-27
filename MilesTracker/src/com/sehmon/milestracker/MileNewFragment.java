@@ -12,6 +12,7 @@ import android.app.Fragment;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -77,15 +78,17 @@ public class MileNewFragment extends Fragment {
 	        case R.id.action_cancelMile:
 	        	getActivity().setResult(RESULT_FAILED);
 	    		getActivity().finish();
-	        	break;  
 	        	
 	        case R.id.action_addMile:
 	        	saveMile();
+	        case android.R.id.home:
+	        	if(NavUtils.getParentActivityName(getActivity()) != null){
+	        		NavUtils.navigateUpFromSameTask(getActivity());
+	        	}
 	        	
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
-		return false;
 	   
 	}
 	
@@ -143,6 +146,7 @@ public class MileNewFragment extends Fragment {
             Bundle savedInstanceState){
         View v = inflater.inflate(R.layout.fragment_new_mile, parent, false);
 
+        getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
         
         typeRadioGroup = (RadioGroup)v.findViewById(R.id.typeRadioGroup);
         
@@ -246,6 +250,12 @@ public class MileNewFragment extends Fragment {
 
 	    return calendar.getTime();
 		
+	}
+	
+	@Override
+	public void onPause(){
+		super.onPause();
+		MileLab.get(getActivity()).saveMiles();
 	}
 	
 }
