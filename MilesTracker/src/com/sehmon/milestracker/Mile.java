@@ -1,6 +1,9 @@
 package com.sehmon.milestracker;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 import java.util.UUID;
 
 import org.json.JSONException;
@@ -29,6 +32,7 @@ public class Mile {
         mType = "Default";
         mDate = new Date();
     }
+    
     
     public UUID getId() {
         return mId;
@@ -73,6 +77,22 @@ public class Mile {
 		this.mTime = mTime;
 	}
 
+	public Mile(JSONObject json) throws JSONException {
+    	mId =  UUID.fromString(json.getString(JSON_ID));
+    	mType = json.getString(JSON_TYPE);
+    	mLength = json.getDouble(JSON_LENGTH);
+    	mTime = json.getDouble(JSON_TIME);
+    	
+    	SimpleDateFormat sdf = new SimpleDateFormat("EEE MMM dd kk:mm:ss z yyyy", Locale.US);
+    	try {
+			mDate = sdf.parse(json.getString(JSON_DATE));
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	mDescription = json.getString(JSON_DESCRIPTION);
+    }
+	
 	public JSONObject toJSON() throws JSONException {
 		// TODO Auto-generated method stub
 		JSONObject json = new JSONObject();

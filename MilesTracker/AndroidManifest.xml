@@ -3,9 +3,10 @@
     package="com.sehmon.milestracker"
     android:versionCode="1"
     android:versionName="1.0" >
-    
-     <meta-data android:name="android.support.PARENT_ACTIVITY"
-        android:value=".MileHomeActivity"/>
+
+    <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value=".MileHomeActivity" />
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -18,8 +19,8 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.sehmon.milestracker.MileHomeActivity"
-            android:label="@string/app_name"
-            android:configChanges="orientation">    
+            android:configChanges="orientation"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,8 +29,12 @@
         </activity>
         <activity
             android:name="com.sehmon.milestracker.MileNewActivity"
-            android:label="@string/app_name"
-            android:configChanges="orientation" />
+            android:configChanges="orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.sehmon.milestracker.MileListActivity"
+            android:label="@string/title_activity_mile_list" >
+        </activity>
     </application>
 
 </manifest>

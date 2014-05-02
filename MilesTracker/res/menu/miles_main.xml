@@ -6,5 +6,16 @@
         android:showAsAction="ifRoom"
         android:title="@string/add_new_mile">
     </item>
+    
+    <item 
+        android:id="@+id/action_reset_miles"
+        android:title="@string/reset">
+    </item>
+    
+    <item 
+        android:id="@+id/action_list_view"
+        android:title="@string/show_list">
+        
+        </item>
 
 </menu>

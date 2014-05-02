@@ -10,7 +10,7 @@ public class MileListActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_new_mile);
+		setContentView(R.layout.activity_mile_list);
 		
 		FragmentManager fm = getFragmentManager();
         Fragment fragment = fm.findFragmentById(R.id.listFragmentContainer);
@@ -28,7 +28,7 @@ public class MileListActivity extends Activity {
     }
 	
 	protected Fragment createFragment(){
-		return new MileNewFragment();
+		return new MileListFragment();
 	}
 
 }

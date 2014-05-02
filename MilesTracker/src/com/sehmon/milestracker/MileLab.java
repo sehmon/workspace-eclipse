@@ -18,8 +18,16 @@ public class MileLab {
     
     
     private MileLab(Context appContext){
-        mMiles = new ArrayList<Mile>();
-       mAppContext = appContext;
+    	mAppContext = appContext;
+    	mSerializer = new MileJSONSerializer(mAppContext, FILENAME);
+    	
+    	try {
+    		mMiles = mSerializer.loadMiles();
+    	} catch (Exception e) {
+    		mMiles = new ArrayList<Mile>();
+    		Log.e(TAG, "error loading miles", e);
+    	}
+       
     }
     
     public static MileLab get(Context c){
@@ -65,6 +73,10 @@ public class MileLab {
     		Log.e(TAG, "Error saving Crimes", e);
     		return false;
     	}
+    }
+    
+    public void resetMiles(){
+    	mMiles = new ArrayList<Mile>();
     }
     
     

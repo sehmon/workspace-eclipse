@@ -1,0 +1,9 @@
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc\tTorg.eclipse.cdt.ui.presentation\tTorg.eclipse.cdt.ui.CEditor.presentation\tTorg.eclipse.team.cvs.ui.fontsandcolors\tTorg.eclipse.debug.ui.presentation\tTorg.eclipse.jdt.ui.presentation\tTorg.eclipse.wst.sse.ui\tTorg.eclipse.compare.contentmergeviewer.TextMergeViewer\tTorg.eclipse.ui.presentation.default
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jdt.ui.PropertiesFileEditor.textfont
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.PropertiesFileEditor.textfont=1|Lato|10.0|0|GTK|1|;
+org.eclipse.jdt.ui.editors.textfont=1|Lato|10.0|0|GTK|1|;
+org.eclipse.jface.bannerfont=1|Lato|10.0|0|GTK|1|;
+org.eclipse.jface.headerfont=1|Lato|10.0|1|GTK|1|;
+org.eclipse.jface.textfont=1|Lato|10.0|0|GTK|1|;
+org.eclipse.ui.workbench.texteditor.blockSelectionModeFont=1|Lato|10.0|0|GTK|1|;

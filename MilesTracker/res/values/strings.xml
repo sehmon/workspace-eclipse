@@ -7,28 +7,21 @@
     <string name="miles_needed">Miles Needed</string>
     <string name="miles_ran">Miles Ran</string>
     <string name="miles_to_go">Miles To Go</string>
-    
-    
-    <string name="new_mile_type">Type</string> 
+    <string name="new_mile_type">Type</string>
     <string name="new_school_mile">School</string>
     <string name="new_home_mile">Home</string>
     <string name="new_sport_mile">Sport</string>
-    
     <string name="new_mile_time">Time:</string>
     <string name="new_mile_date">Date:</string>
-    <string name="new_mile_length">Length:</string>  
+    <string name="new_mile_length">Length:</string>
     <string name="new_mile_description">Description:</string>
-    
     <string name="add_new_mile">Add Mile</string>
-    
     <string name="date_dialog">Date</string>
-    
     <string name="add">Add</string>
     <string name="cancel">Cancel</string>
-    
-    
-    
-
-    
+    <string name="reset">Reset</string>
+    <string name="title_activity_mile_list">MileListActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="show_list">Show List</string>
 
 </resources>

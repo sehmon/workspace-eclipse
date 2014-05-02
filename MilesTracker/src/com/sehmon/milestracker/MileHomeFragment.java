@@ -70,6 +70,16 @@ public class MileHomeFragment extends Fragment {
 	        case R.id.action_new_mile:
 	        	getNewMile();
 	        	break;  
+	        	
+	        case R.id.action_reset_miles:
+	        	MileLab.get(getActivity()).resetMiles();
+	        	break;
+	        	
+	        	//TODO make view reset on button press, (Dialog Fragment or Settings)
+	        	
+	        case R.id.action_list_view:
+	        	Intent i = new Intent(getActivity(), MileListActivity.class);
+	        	startActivity(i);
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
@@ -149,6 +159,12 @@ public class MileHomeFragment extends Fragment {
 		return v;
 		
 		
+	}
+	
+	@Override
+	public void onPause(){
+		super.onPause();
+		MileLab.get(getActivity()).saveMiles();
 	}
 	
 
